@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import WeatherInformations from "../components/clima";
 
 interface WeatherData {
-  date: number;
+  date: string;
   temperatureC: number;
   temperatureF: number ;
   summary: string;
