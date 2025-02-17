@@ -1,5 +1,6 @@
 import CurrentHour from "../hooks/usehours";
 import { TbTemperatureCelsius, TbTemperatureFahrenheit } from "react-icons/tb";
+import { formatDate } from "../utils/formatDate";
 
 interface WeatherData {
   date: string;
@@ -17,7 +18,7 @@ function WeatherInformations({ weather }: WeatherProps) {
     <div className="containerResultado">
       <div className="resultado">
         <form className="form1">
-          <div className="dateActual">{(weather.date)}</div>
+          <div className="dateActual">{formatDate(weather.date)}</div>
           <div className="hourActual">
             <CurrentHour />
           </div>
