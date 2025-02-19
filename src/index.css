@@ -1,3 +1,4 @@
+
 :root {
   --cor-fundo: #D6EAF8;
   --cor-branco: #FFFFFF;
@@ -14,14 +15,10 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body {
-  background-color: var(--cor-fundo);
-}
-
 header {
   width: 100%;
   height: 94px;
-  background-color: var(--cor-branco);
+  background-color: #FFFFFF;
   flex-wrap: wrap;
   display: flex;
 }
@@ -39,6 +36,10 @@ header {
   color: #1B4F72
 }
 
+body {
+  background-color: #D6EAF8;
+}
+
 .containerGeral {
   display: flex;
   justify-content: center;
@@ -49,10 +50,9 @@ header {
 
 
 .containerBusca {
-  width: 90%;
-  max-width: 400px;
+  width: 100px;
   height: 100px;
-  background-color: var(--cor-branco);
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,13 +95,11 @@ header {
 }
 
 .containerResultado {
-  width: 90%;
-  max-width: 400px;
+  width: 300px;
   height: 250px;
   padding: 20px;
-  background-color: var(--cor-branco);
+  background-color: #FFFFFF;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -109,7 +107,7 @@ header {
 }
 
 .resultado {
-  width: 100%;
+  width: 200px;
   height: 400px;
   text-align: center;
 }
@@ -166,22 +164,3 @@ header {
   align-items: center;
   font-size: 30px;
 }
-
-@media (max-width: 768px) {
-  .containerGeral {
-    height: auto; /* Permite que o container se ajuste ao conteúdo */
-  }
-
-  .containerBusca {
-    width: 90%; /* Ajusta a largura em telas menores */
-  }
-
-  .containerResultado {
-    width: 90%; /* Ajusta a largura em telas menores */
-  }
-
-  .buscarCidade input {
-    width: 100%; /* O campo de entrada ocupa toda a largura disponível */
-  }
-}
-  
