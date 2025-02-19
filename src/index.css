@@ -184,15 +184,4 @@ header {
     width: 100%; /* O campo de entrada ocupa toda a largura disponível */
   }
 }
-
-/* Estilos para telas menores que 480px */
-@media (max-width: 480px) {
-  .buscarCidade input {
-    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
-  }
-
-  .buscarIcone {
-    font-size: 20px;
-  }
-}
   
