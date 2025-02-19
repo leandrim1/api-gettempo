@@ -1,27 +1,3 @@
-@media (max-width: 308px) {
-  .containerGeral {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .containerBusca {
-    width: 90%;
-    height: auto;
-  }
-
-  .buscarCidade input {
-    width: 100%;
-  }
-
-  .containerResultado {
-    width: 100%;
-  }
-
-  .resultado {
-    width: 100%;
-  }
-}
-
 :root {
   --cor-fundo: #D6EAF8;
   --cor-branco: #FFFFFF;
@@ -38,10 +14,14 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body {
+  background-color: var(--cor-fundo);
+}
+
 header {
   width: 100%;
   height: 94px;
-  background-color: #FFFFFF;
+  background-color: var(--cor-branco);
   flex-wrap: wrap;
   display: flex;
 }
@@ -59,10 +39,6 @@ header {
   color: #1B4F72
 }
 
-body {
-  background-color: #D6EAF8;
-}
-
 .containerGeral {
   display: flex;
   justify-content: center;
@@ -73,9 +49,10 @@ body {
 
 
 .containerBusca {
-  width: 100px;
+  width: 90%;
+  max-width: 400px;
   height: 100px;
-  background-color: #FFFFFF;
+  background-color: var(--cor-branco);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,11 +95,13 @@ body {
 }
 
 .containerResultado {
-  width: 300px;
+  width: 90%;
+  max-width: 400px;
   height: 250px;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: var(--cor-branco);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -130,7 +109,7 @@ body {
 }
 
 .resultado {
-  width: 200px;
+  width: 100%;
   height: 400px;
   text-align: center;
 }
@@ -187,3 +166,30 @@ body {
   align-items: center;
   font-size: 30px;
 }
+
+@media (max-width: 768px) {
+  .containerGeral {
+    height: auto; /* Permite que o container se ajuste ao conteúdo */
+  }
+
+  .containerBusca {
+    width: 90%; /* Ajusta a largura em telas menores */
+  }
+
+  .containerResultado {
+    width: 90%; /* Ajusta a largura em telas menores */
+  }
+
+  .buscarCidade input {
+    width: 100%; /* O campo de entrada ocupa toda a largura disponível */
+  }
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+  .buscarCidade input {
+    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+  }
+
+  .buscarIcone {
+    font-size: 20px; /* Reduz
