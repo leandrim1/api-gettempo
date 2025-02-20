@@ -15,7 +15,6 @@ interface WeatherProps {
 }
 
 function Home() {
-
   const [weather, setWeather] = useState<WeatherProps[]>([]);
 
   async function loadWeather() { 

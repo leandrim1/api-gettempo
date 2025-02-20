@@ -1,6 +1,7 @@
 import CurrentHour from "../hooks/usehours";
 import { TbTemperatureCelsius, TbTemperatureFahrenheit } from "react-icons/tb";
 import { formatDate } from "../utils/formatDate";
+import { useTranslation } from "react-i18next";
 
 interface WeatherData {
   date: string;
@@ -14,6 +15,9 @@ interface WeatherProps {
 }
 
 function WeatherInformations({ weather }: WeatherProps) {
+  const [t] = useTranslation();
+
+
   return (
     <div className="containerResultado">
       <div className="resultado">
@@ -36,7 +40,7 @@ function WeatherInformations({ weather }: WeatherProps) {
               </h2>
             </div>
           </div>
-          <div className="summary">{weather.summary}</div>
+          <div className="summary">{t(weather.summary)}</div>
         </form>
       </div>
     </div>
