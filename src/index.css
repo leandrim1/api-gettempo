@@ -490,6 +490,155 @@ body {
   }
 }
 
+@media (max-width: 129px) and (min-width: 114px) {
+  .containerGeral {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 60vh;
+  }
+  .containerResultado {
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+    margin-left: 15vh;
+  }
+  
+  .containerBusca {
+    width: 7vh; 
+    height: auto; 
+    margin-bottom: 2vh;
+    margin-left: 20vh;
+  }
+  
+  .tema-tela {
+    padding-left: 40%;
+  }
+  
+  header {
+    width: 90vh;
+    height: 12vh;
+    margin-bottom: 2vh;
+  }
+  
+  .summary {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 113px) and (min-width: 102px) {
+  .containerGeral {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 60vh;
+  }
+  .containerResultado {
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+    margin-left: 10vh;
+  }
+  
+  .containerBusca {
+    width: 7vh; 
+    height: auto; 
+    margin-bottom: 2vh;
+    margin-left: 14vh;
+  }
+  
+  .tema-tela {
+    padding-left: 30%;
+  }
+  
+  header {
+    width: 90vh;
+    height: 12vh;
+    margin-bottom: 2vh;
+  }
+  
+  .summary {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 101px) and (min-width: 94px) {
+  .containerGeral {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 60vh;
+  }
+  .containerResultado {
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+    margin-left: 8vh;
+  }
+  
+  .containerBusca {
+    width: 7vh; 
+    height: auto; 
+    margin-bottom: 2vh;
+    margin-left: 12vh;
+  }
+  
+  .tema-tela {
+    padding-left: 20%;
+  }
+  
+  header {
+    width: 90vh;
+    height: 12vh;
+    margin-bottom: 2vh;
+  }
+  
+  .summary {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 93px) and (min-width: 80px) {
+  .containerGeral {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 60vh;
+  }
+  .containerResultado {
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+    margin-left: 6vh;
+  }
+  
+  .containerBusca {
+    width: 7vh; 
+    height: auto; 
+    margin-bottom: 2vh;
+    margin-left: 10vh;
+  }
+  
+  .tema-tela {
+    padding-left: 10%;
+  }
+  
+  header {
+    width: 90vh;
+    height: 12vh;
+    margin-bottom: 2vh;
+  }
+  
+  .summary {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+}
+
+
 
 
 
