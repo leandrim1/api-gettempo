@@ -17,7 +17,7 @@
 
 header {
   width: 100%;
-  height: 94px;
+  height: 10vh;
   align-items: center;
   background-color: var(--cor-branco);
   flex-wrap: wrap;
@@ -26,13 +26,13 @@ header {
 
 .logo-clima {
   display: flex;
-  padding: 13px;
-  padding-left: 20px;
+  padding: 1.5vh;
+  padding-left: 3vh;
 }
 
 .title-header {
   display: flex;
-  padding-left: 20px;
+  padding-left: 2vw;
   align-items: center;
   color: #1B4F72
 }
@@ -45,131 +45,229 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 750px;
-  gap: 20px; 
+  height: 80vh;
+  gap: 1vw; 
 }
 
 
 .containerBusca {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: auto;
   background-color: var(--cor-branco);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px var(--cor-texto);
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 40px;
+  border-radius: 1rem;
+  box-shadow: 0 0.5vh 1vh var(--cor-texto);
+  margin-bottom: 2vh;
+  margin-left: 8vh;
+  margin-right: 4vh;
 }
 
 .buscarCidade {
   display: flex;
   align-items: center;
   background-color: #fff;
-  border-radius: 20px;
-  border: 2px solid var(--cor-fundo);
-  padding: 10px;
-  box-shadow: 0 2px 4px var(--cor-texto);
+  border-radius: 1rem;
+  border: 0.2rem solid var(--cor-fundo);
+  padding: 1vh;
+  box-shadow: 0 0.2vh 0.4vh var(--cor-texto); 
 }
 
 .buscarCidade input {
   border: none;
   outline: none;
-  padding: 10px;
-  font-size: 16px;
-  width: 250px;
+  padding: 1vh;
+  font-size: 1.6vh;
+  width: 60%;
 }
 
 .buscarBotao {
-  border: 2px solid var(--cor-fundo);
+  border: 0.2rem solid var(--cor-fundo);
   border-radius: 50%;
   cursor: pointer;
-  padding: 5px;
+  padding: 0.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .buscarIcone {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--cor-texto-secundario);
 }
 
 .containerResultado {
-  width: 300px;
-  height: 250px;
-  padding: 20px;
+  width: 33vh;
+  height: 25vh;
+  padding: 2vh;
   background-color: var(--cor-branco);
   display: flex;
   justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px var(--cor-texto);
-  margin-bottom: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 0.5vh 1vh var(--cor-texto);
+  margin-bottom: 2vh;
 }
 
 .resultado {
-  width: 200px;
-  height: 400px;
+  width: 80%;
+  height: auto;
   text-align: center;
 }
 
 .climaArea h1 {
-  font-size: 24px;
+  font-size: 2rem;
   color: var(--cor-texto);
 }
 
 .climaArea span {
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--cor-texto-secundario);
 }
 
 .icon {
-  font-size: 40px;
-  margin: 10px 0;
+  font-size: 2.5rem;
+  margin: 1vh 0;
 }
 
 .botaoInfoArea {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 2vh;
+  margin-top: 2vh;
 }
 
 .celsiusIcone {
-  height: 25px;
+  height: 2rem;
   color: #000000;
 }
 
 .fahrenheitIcone {
-  height: 25px;
+  height: 2rem;
   color: var(--cor-secundaria);
 }
 
 .temperatureC {
   display: flex;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #000000;
 }
 
 .temperatureF {
   display: flex;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--cor-secundaria);
 }
 
-
 .summary {
-  height: 90px;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .tema-tela {
   display: flex;
-  padding-left: 90%;
+  padding-left: 85%;
   align-items: center;
 }
+
+@media (max-width: 1376px) and (min-width: 921px) {
+  .containerResultado {
+    width: 25vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+  
+  .containerBusca {
+    width: auto; 
+    height: auto; 
+    margin-bottom: 2vh;
+  }
+  
+  .tema-tela {
+    padding-left: 80%;
+  }
+  
+  header {
+    width: 170vh;
+    height: 12vh;
+    margin-bottom: 2vh;
+  }
+  
+  .summary {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 920px) and (min-width: 481px) {
+  .containerResultado {
+    width: 15vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+  
+  .containerBusca {
+    width: 7vh; 
+    height: auto; 
+    margin-bottom: 2vh;
+  }
+  
+  .tema-tela {
+    padding-left: 66%;
+  }
+  
+  header {
+    width: 110vh;
+    height: 12vh;
+    margin-bottom: 2vh;
+  }
+  
+  .summary {
+    font-size: 1.1rem;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 310px) {
+  .containerGeral {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 50vh;
+  }
+  .containerResultado {
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 2vh;
+    margin-left: 37vh;
+  }
+  
+  .containerBusca {
+    width: 7vh; 
+    height: auto; 
+    margin-bottom: 2vh;
+    margin-left: 40vh;
+  }
+  
+  .tema-tela {
+    padding-left: 95%;
+  }
+  
+  header {
+    width: 110vh;
+    height: 12vh;
+    margin-bottom: 2vh;
+  }
+  
+  .summary {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+}
+
+
+
+
