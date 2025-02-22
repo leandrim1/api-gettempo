@@ -24,7 +24,7 @@ function App() {
       <header>
         <div className="App">
           <div className="logo-clima">
-            <img src="./public/climate-logo 1.svg" alt="" />
+            <img src="https://api-gettempo.vercel.app/climate-logo%201.svg" alt="" />
             <h1 className="title-header">GetTempo</h1>
             <div className="tema-tela">
               <Switch
